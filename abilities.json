@@ -1,0 +1,161 @@
+﻿{
+  "Abilities": [
+    {
+      "Name": "Move",
+      "Description": "This ability costs 0 vigour/stamina to use out of combat and 1 stamina to use in combat. Move up to 15m away from your current position.",
+      "Granted": true
+    },
+    {
+      "Name": "Exhaust",
+      "Description": "This ability costs 0 vigour/stamina to use out or in combat, however, cannot be used if any other abilities have been played on the current turn in combat. Turn an amount of vigour up to your stamina capacity into stamina. You are not allowed to reduce your vigour below zero.",
+      "Granted": true
+    },
+    {
+      "Name": "Melee Attack",
+      "Description": "You attack someone within 3m of you, dealing 1d4 damage. The person you are attacking may block your attack by spending 1d6 stamina.",
+      "Upgrades": [
+        {
+          "Name": "Melee Flurry",
+          "Description": "You send out a barrage of attacks. You make three attacks every use of this ability instead of one. However, enemies can block any individual attack with only 1d4 stamina instead of 1d6 stamina."
+        },
+        {
+          "Name": "Draining Strike",
+          "Description": "Instead of making three attacks, you may instead choose to make a single attack which costs 0 stamina and restores an amount of vigour equal to the damage dealt. Making a draining strike immediately ends your turn."
+        }
+      ]
+    },
+    {
+      "Name": "Mark",
+      "Description": "You vigilantly follow an enemy target. The enemy target being followed may not block any ability which causes damage until the start of your next turn.",
+      "Upgrades": [
+        {
+          "Name": "Sustained Watch",
+          "Description": "The mark ability instead ends of the end of your next turn."
+        },
+        {
+          "Name": "Overwatch",
+          "Description": "You learn to watch every move the enemy target makes to a precise degree. When marked, you may block any ability which the enemy tries to make by spending 1 stamina."
+        }
+      ]
+    },
+    {
+      "Name": "Ranged Attack",
+      "Description": "You learn to improvise ranged weapons on the fly. Provided that a small object is near you (such as a rock), you may throw it, dealing 1d6 damage to an enemy (which can be blocked with 1d6 stamina). After the object is thrown, it moves to the same location as the enemy.",
+      "Upgrades": [
+        {
+          "Name": "Smashing Attack",
+          "Description": "When making a ranged attack, you may choose to destroy the object upon impact. This increases the damage dealt by one. If the attack is blocked, the object does not break."
+        },
+        {
+          "Name": "Returning Fire",
+          "Description": "When making a ranged attack where the object will not be destroyed, if the attack deals less than 5 damage, the object will return to its original position."
+        }
+      ]
+    },
+    {
+      "Name": "Emergency Aid",
+      "Description": "You heal one person within 3m of you by an amount of health equal to the stamina used for the ability.",
+      "Upgrades": [
+        {
+          "Name": "Prolonged Aid",
+          "Description": "When using this ability, you may choose to multiply the stamina used by two or three."
+        },
+        {
+          "Name": "Health Protocol",
+          "Description": "You learn how to heal to an experts-level. The amount of health healed is now equal to the stamina consumed plus 1d6."
+        }
+      ]
+    },
+    {
+      "Name": "Inspire",
+      "Description": "You may give one person within line of sight 1 stamina.",
+      "Upgrades": [
+        {
+          "Name": "Enduring Inspiration",
+          "Description": "You may give vigour instead of stamina when using this ability."
+        },
+        {
+          "Name": "Morbid Hope",
+          "Description": "When any ally within line of sight (including yourself) takes damage, you may use this ability for 1 stamina."
+        }
+      ]
+    },
+    {
+      "Name": "Rend",
+      "Description": "You attack someone within line of sight, dealing (1d4 – 1) damage. The person you are attacking may block your attack by spending (1d4 - 1) stamina.",
+      "Upgrades": [
+        {
+          "Name": "Lasting Impact",
+          "Description": "If you use several rends consecutively against a single target on the same turn, even if one or more of the rends are blocked, the damage caused by the next rend is increased by a number equal to the number of rends already used."
+        },
+        {
+          "Name": "Unblockable",
+          "Description": "If a rend attack is blocked, the stamina for using the ability is refunded. However, if another rend attack on the same turn hits, it consumes 1 extra stamina."
+        }
+      ]
+    },
+    {
+      "Name": "Flux",
+      "Description": "By spending 2 stamina and ending your turn (if in combat), you may create one “flux”, with the maximum being able to be stored at once being equal to your stamina capacity minus your current stamina. Flux may be used at any time, being treated as health, vigour, and stamina simultaneously. If your total flux exceeds your flux capacity, any excess flux is turned back into stamina.",
+      "Upgrades": [
+        {
+          "Name": "Flux Store",
+          "Description": "The cost of creating flux is reduced to one."
+        },
+        {
+          "Name": "Flux Blast",
+          "Description": "In combat, you may forgo your turn to instead make a “Flux Blast”. Use all of your flux stored to make an attack against 1 target within 45m, dealing an amount of damage equal to the flux used to make the attack. This can be blocked through the target spending a number of stamina equal to the flux used."
+        }
+      ]
+    },
+    {
+      "Name": "Recursive Abilties",
+      "Description": "You may use this ability to make your next two abilities cost half their usual stamina/vigour/flux cost.",
+      "Upgrades": [
+        {
+          "Name": "Small Cost",
+          "Description": "The cost to use this ability is 1 stamina or vigour inside or outside of combat."
+        },
+        {
+          "Name": "Thought Wrap",
+          "Description": "If used at the start of a turn in combat, this ability applies to every ability casted in the turn afterwards. However, the stamina required for using the ability is 1d4."
+        }
+      ]
+    },
+    {
+      "Name": "Area of hurt",
+      "Description": "Choose a position within 30m of you. Every living organism within a 6m radius of the position you chose takes (1d4 – 2) damage, with the lowest amount of damage possible being 0. Each organism in radius may block the attack by spending (1d4 – 1) stamina.",
+      "Upgrades": [
+        {
+          "Name": "Unavoidable",
+          "Description": "By spending 1 more stamina when using this ability, you may remove the ability for the area of hurt to be blocked."
+        },
+        {
+          "Name": "Pain",
+          "Description": "The area of hurt deals (1d4 - 1) damage instead of (1d4 – 2) damage."
+        }
+      ]
+    },
+    {
+      "Name": "Quick Step",
+      "Description": "Choose a position within 9m of you which is in line-of-sight. Move to that position.",
+      "Upgrades": [
+        {
+          "Name": "Far Step",
+          "Description": "The range of this ability increases to 18m. This may be increased by 3m by spending 1 extra stamina when using the ability. This can stack."
+        },
+        {
+          "Name": "Memory Step",
+          "Description": "Line-of-sight is no longer required to use this ability."
+        }
+      ]
+    }
+  ],
+  "Costs": {
+    "Stamina": 10,
+    "Vigour": 5,
+    "Health": 3,
+    "Ability": 15,
+    "LegendaryAbility": 25
+  }
+}
